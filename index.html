@@ -8,6 +8,35 @@
     <title>Napló</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Jegynapló</h1>
+        
+        <div class="form">
+            <select id="tantargy">
+                <option value="">Válassz tantárgyat...</option>
+                <option value="Matematika">Matematika</option>
+                <option value="Magyar">Magyar</option>
+                <option value="Angol">Angol</option>
+                <option value="Informatika">Informatika</option>
+            </select>
+            
+            <div class="grade-buttons">
+                <button class="grade-btn" data-grade="1">1</button>
+                <button class="grade-btn" data-grade="2">2</button>
+                <button class="grade-btn" data-grade="3">3</button>
+                <button class="grade-btn" data-grade="4">4</button>
+                <button class="grade-btn" data-grade="5">5</button>
+            </div>
+            
+            <button id="add-btn">Hozzáadás</button>
+        </div>
+        
+        <div class="stats">
+            <p>Átlag: <strong id="average">0</strong></p>
+            <p>Összes jegy: <strong id="count">0</strong></p>
+        </div>
+        
+        <ul id="grades-list"></ul>
+    </div>
 </body>
 </html>
